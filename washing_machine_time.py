@@ -32,13 +32,13 @@ def washing_machine_time(weight):
     if weight < 0 or weight > 7000:
         return "INVALID INPUT"  # Weight is out of range
 
-    if weight == 0:
+    elif weight == 0:
         return "0 minutes"  # No clothes, no time needed
 
-    if weight <= 2000:
+    elif weight <= 2000:
         return "25 minutes"  # Low level water
 
-    if weight <= 4000:
+    elif weight <= 4000:
         return "35 minutes"  # Medium level water
 
     return "45 minutes"  # High level water
