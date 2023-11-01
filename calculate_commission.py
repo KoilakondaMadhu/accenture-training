@@ -11,6 +11,27 @@
 
 # SchemeAmount = 5000
 
+# Example 1: When there are more than one child members
+# Amit
+# Y
+
+# Input: (Do not give input prompts.Accept values as follows.)
+# //Enter parent Member as this
+# //Enter Y if Parent member has child members
+# otherwise enter N Rajesh.Virat //Enter names of child members of Amit in comma separated
+# Output:(Final Output must be in format given below.)
+# TOTAL MEMBERS:3
+# COMISSION DETAILS
+# Amit: 1000 INR
+# Rajesh :250 INR
+# Virat: 250 INR
+
+# Example 2: When there is only one child member in the hierarchy
+
+# Input:
+# Amit
+# Y
+
 
 
 
