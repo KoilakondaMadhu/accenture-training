@@ -16,6 +16,18 @@
 
 
 
+# "INVALID INPUT".
+# Input should be in the form of integer value -
+# Output must have the following format -
+# Time Estimated: Minutes
+
+# Example:
+# Input value
+# # 2000
+# Output value
+# Time Estimated: 25 minutes
+
+
 def washing_machine_time(weight):
     if weight < 0 or weight > 7000:
         return "INVALID INPUT"  # Weight is out of range
