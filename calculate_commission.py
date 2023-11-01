@@ -32,6 +32,16 @@
 # Amit
 # Y
 
+s = input("Enter a value for s: ")
+a = input("Enter 'Y' or any other character for a: ")
+
+if a == 'Y':
+    l = input("Enter a comma-separated list of values: ").split(",")
+    print(s, 500 * len(l))
+    for i in l:
+        print(i, 250)
+else:
+    print(s, 250)
 
 
 
@@ -42,44 +52,44 @@
 
 
 
-# Initialize scheme amount and commission rates
-scheme_amount = 5000
-parent_commission_rate = 0.10
-child_commission_rate = 0.05
+# # Initialize scheme amount and commission rates
+# scheme_amount = 5000
+# parent_commission_rate = 0.10
+# child_commission_rate = 0.05
 
-# Initialize lists to store member names and their commissions
-member_names = []
-member_commissions = []
+# # Initialize lists to store member names and their commissions
+# member_names = []
+# member_commissions = []
 
-# Function to calculate commission for a member
-def calculate_commission(member_type, children_count):
-    if member_type == "parent":
-        return scheme_amount * parent_commission_rate * children_count
-    elif member_type == "child":
-        return scheme_amount * child_commission_rate
-    else:
-        return 0  # Invalid member type
+# # Function to calculate commission for a member
+# def calculate_commission(member_type, children_count):
+#     if member_type == "parent":
+#         return scheme_amount * parent_commission_rate * children_count
+#     elif member_type == "child":
+#         return scheme_amount * child_commission_rate
+#     else:
+#         return 0  # Invalid member type
 
-# Input: Enter the names of members joining the scheme
-while True:
-    member_name = input("Enter the name of a member (or 'done' to finish): ")
-    if member_name == "done":
-        break
-    member_type = input("Is this member a 'parent' or 'child'? ")
-    children_count = int(input("Enter the number of children under this member: "))
+# # Input: Enter the names of members joining the scheme
+# while True:
+#     member_name = input("Enter the name of a member (or 'done' to finish): ")
+#     if member_name == "done":
+#         break
+#     member_type = input("Is this member a 'parent' or 'child'? ")
+#     children_count = int(input("Enter the number of children under this member: "))
     
-    member_names.append(member_name)
-    commission = calculate_commission(member_type, children_count)
-    member_commissions.append(commission)
+#     member_names.append(member_name)
+#     commission = calculate_commission(member_type, children_count)
+#     member_commissions.append(commission)
 
-# Display the number of members who joined the scheme
-total_members = len(member_names) + 1  # Include the parent member
-print(f"Total members who joined the scheme: {total_members}")
+# # Display the number of members who joined the scheme
+# total_members = len(member_names) + 1  # Include the parent member
+# print(f"Total members who joined the scheme: {total_members}")
 
-# Display the commissions for each member
-for i in range(total_members):
-    print(f"{member_names[i]} earned a commission of Rs. {member_commissions[i]:.2f}")
+# # Display the commissions for each member
+# for i in range(total_members):
+#     print(f"{member_names[i]} earned a commission of Rs. {member_commissions[i]:.2f}")
 
-# Calculate and display the total commission earned by all members
-total_commission = sum(member_commissions)
-print(f"Total commission earned by all members: Rs. {total_commission:.2f}")
+# # Calculate and display the total commission earned by all members
+# total_commission = sum(member_commissions)
+# print(f"Total commission earned by all members: Rs. {total_commission:.2f}")
