@@ -16,3 +16,14 @@ def sum_even(a: List[int]) -> int:
 input_list = [1, 2, 3, 4, 5, 6]
 result = sum_even(input_list)
 print(result)  # This will print 12, which is the sum of even numbers (2 + 4 + 6) in the list.
+
+
+
+l = list(map(int, input().split()))
+sum = 0
+
+for i in l:
+    if i % 2 == 0:
+        sum += i
+
+print(sum)
