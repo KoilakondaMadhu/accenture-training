@@ -15,3 +15,10 @@ else:
     print('Not a Magical Number')
 
 
+
+# n  = 1729
+# s1     sum of digits //2+7+9+1    => 19
+# s2     reverse the sum            =>91
+# s3     step1 * step2    91*19     =>1729
+
+
